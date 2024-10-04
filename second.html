@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        #next-button {
+            margin-bottom: 20px;
+        }
+        
+        #image-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PILIT PA!</h1>
+    <button id="next-button">Next</button>
+    <div id="image-container">
+        <img src="Assets/PILIT.jpg" alt="Start" width="500" height="600" style="object-fit: contain">
+    </div>
+    <script>
+        const nextButton = document.getElementById("next-button");
+
+        nextButton.addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
